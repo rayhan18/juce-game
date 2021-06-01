@@ -1,0 +1,122 @@
+!<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>fruit game</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link rel="stylesheet" href="main.css">
+
+        <style>
+            .winnerResult{
+                padding: 10px;
+                text-align: center;
+                font-size: 30px;
+                width: 500px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 30px;
+                border-radius: 10px;
+                -webkit-box-shadow: inset -1px 3px 8px 5px #1F87FF, 2px 5px 16px 0px #0B325E, 5px 5px 15px 5px rgba(0,0,0,0); 
+box-shadow: inset -1px 3px 8px 5px #1F87FF, 2px 5px 16px 0px #0B325E, 5px 5px 15px 5px rgba(0,0,0,0);
+            }
+        </style>
+    </head>
+    <body class="background">
+       <div class='text-center'>
+           <h2 class="text-white"><img src="Images/OE8yfunZ.gif"/> </h2>
+                    <div>
+                        <h2  class="text-white">Score Bord</h2>
+                        <h4 class="text-white"> player one score[ <span style ="color:tomato" id= 'player1Score'>0 </span>  ]
+                            player two score  [<span style ="color:tomato" id= 'player2Score'>0 </span>]
+                        </h4>
+                        <button id = "player1Btn" class="btn-primary pone "  >player One</button>
+                        
+                        <input id='inputNum' type='number ' />
+                        <button  id ="player2Btn" class="btn-primary pone">player Two</button>
+                    </div>
+           <button id ="inputBtn" class="btn-primary mt-2 mb-5">Input Number</button>
+           <button id ="reset" class="btn-primary mt-2 mb-5">Clear Score Bord</button>
+
+           <div class="container">
+             <div class="row">
+                <div class="col  ">
+                   <div class="card float-end" style="width: 18rem;">
+                    <div class="card-header">
+                       <strong>Player One</strong> 
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li  class="list-group-item">Point =<h5 id="pl-point"></h5> </li>
+                      <li class="list-group-item">Juce Item =</li>
+                    
+                    </ul>
+                  </div>
+               
+               </div>
+             
+                <div class="col ml-n5  ">
+                    <div class="card float-start" style="width: 18rem;">
+                     <div class="card-header ">
+                       <strong> Game Bord</strong>
+                     </div>
+                     <ul class="list-group list-group-flush">
+                       <li  class="list-group-item">Player one =<h5 id="p1result"></h5></li>
+                       <li class="list-group-item">Player Two = <h5 id="p2result"></h5></li>
+                      
+                     </ul>
+                   </div>
+                
+                </div>
+              
+            
+             
+                <div class="col  ">
+                    <div class="card" style="width: 18rem; margin-left: -125px;">
+                     <div class="card-header">
+                       <strong>Player Two</strong> 
+                     </div>
+                     <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Point = <h5 id="pl2-point"></h5></li>
+                      <li class="list-group-item">Juce Item =</li>
+                     
+                     </ul>
+                   </div>
+                
+                </div>
+               </div>
+           </div>
+
+           <div class="row mt-5">
+               <div class=" col">
+                <h3 class="text-white">Player one win ----time</h3>
+                <button type="button" class="btn btn-outline-primary">Banana</button>
+                <button type="button" class="btn btn-outline-primary">Mango</button>
+                <button type="button" class="btn btn-outline-primary">Apple</button>
+                <button type="button" class="btn btn-outline-primary">Abakadu</button>
+               
+               </div>
+               <div class="col float-start">
+               <h3 class="text-white"> Hurry I am winner</h3>
+               
+               </div>
+               <div class="col"style=" margin-left: -125px">
+                <h3 class="text-white">Player two win ----time</h3>
+                <button type="button" class="btn btn-outline-primary">Banana</button>
+                <button type="button" class="btn btn-outline-primary">Mango</button>
+                <button type="button" class="btn btn-outline-primary">Apple</button>
+                <button type="button" class="btn btn-outline-primary">Abakadu</button>
+                </div>
+               
+           </div>
+                    <div class="winnerResult">
+                        <h2 class="text-white">Player[]</h2>
+                    </div>
+        </div>
+      
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+        <script src="index.js" async defer></script>
+    </body>
+</html>
